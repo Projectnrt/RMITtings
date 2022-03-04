@@ -6,4 +6,4 @@ spreadsheets into SATS.
 https://chrome.google.com/webstore/detail/code-injector/edkcmfocepnifkbnbkmlcmegedeikdeb?hl=en
 
 ```
-![alt text](https://github.com/Projectnrt/RMITPics/blob/main/CodeInjector.png)
+![alt text](https://raw.githubusercontent.com/Projectnrt/RMITPics/blob/main/CodeInjector.png)
