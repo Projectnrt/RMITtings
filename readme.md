@@ -34,8 +34,6 @@ HTML:
 https://github.com/Projectnrt/RMITtings/blob/master/SHATS.html
 
 
-![enter image description here](https://raw.githubusercontent.com/Projectnrt/RMITPics/main/5.%20Copy%20code.png)
-
 
 5. Save!
 ...and you're done.
