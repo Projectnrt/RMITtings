@@ -19,7 +19,7 @@ https://chrome.google.com/webstore/detail/code-injector/edkcmfocepnifkbnbkmlcmeg
 
 
 3. Click the "Add Rule" button and change the "URL Pattern" to the following:
-https://sats.rmit.edu.au/sats/welcome.do
+https://sats.rmit.edu.au/sats/manageClass.do
 ![enter image description here](https://raw.githubusercontent.com/Projectnrt/RMITPics/main/4.%20Url%20Pattern.png)
 
 
