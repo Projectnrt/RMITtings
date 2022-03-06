@@ -12,13 +12,13 @@ https://chrome.google.com/webstore/detail/code-injector/edkcmfocepnifkbnbkmlcmeg
 ![enter image description here](https://raw.githubusercontent.com/Projectnrt/RMITPics/main/2.%20Injector%20Location.png)
 
 
-2. Locate Code Injector in the top right corner of the chrome browser and click on it
+2. Locate Code Injector in the top right corner of the chrome browser and click "Add Rule":
 
 
 ![enter image description here](https://raw.githubusercontent.com/Projectnrt/RMITPics/main/3.%20Add%20rule.png)
 
 
-3. Click the "Add Rule" button and change the "URL Pattern" to the following:
+3. Change the "URL Pattern" to the following:
 https://sats.rmit.edu.au/sats/manageClass.do
 ![enter image description here](https://raw.githubusercontent.com/Projectnrt/RMITPics/main/4.%20Url%20Pattern.png)
 
