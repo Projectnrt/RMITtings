@@ -24,7 +24,7 @@ https://sats.rmit.edu.au/sats/manageClass.do
 ![enter image description here](https://raw.githubusercontent.com/Projectnrt/RMITPics/main/4.%20Url%20Pattern.png)
 
 
-4. Copy each of the  files content into the respective language heading:
+4. Copy each of the link contents, below, into the respective language heading:
 
 Javascript: https://github.com/Projectnrt/RMITtings/blob/master/SHATS.js
 
