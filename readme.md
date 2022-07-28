@@ -1,6 +1,7 @@
 # SHATs
 The quick way to input your Collab Ultra attendance
-spreadsheets into SATS. (THIS ONLY WORKS WITH A PERSONAL SIGN IN ON CHROME)
+spreadsheets into SATS.
+(THIS ONLY WORKS WITH A PERSONAL SIGN IN ON CHROME)
 
 
 
