@@ -1,0 +1,62 @@
+(function() {
+'use strict';
+
+// Change the "Program" column header to "Preferred Name"
+document.querySelector('table[summary="Attendance Roll"] th:nth-child(3)').innerText = 'Preferred Name';
+
+// Store the program number and section number
+const programNumber = document.querySelector('table[summary="Attendance Roll"] tr:nth-child(2) td:nth-child(3)').innerText.trim();
+const sectionNumber = document.querySelector('table[summary="Class Details"] tr:nth-child(2) td:nth-child(5)').innerText.trim();
+
+// Add "edit" links for editing preferred names
+const rows = document.querySelectorAll('table[summary="Attendance Roll"] tr');
+rows.forEach((row, index) => {
+if (index === 0) return; // Skip header row
+const studentId = row.cells[0].innerText.trim();
+const programCell = row.cells[2];
+const editLink = document.createElement('a');
+editLink.href = '#';
+editLink.innerText = 'edit';
+editLink.onclick = function() {
+const preferredName = prompt('Enter preferred name:', programCell.dataset.preferredName || '');
+if (preferredName !== null) {
+programCell.dataset.preferredName = preferredName;
+programCell.innerHTML = ''; // Clear the cell
+const newLink = document.createElement('a');
+newLink.href = '#';
+newLink.innerText = preferredName || 'edit';
+newLink.onclick = editLink.onclick; // Reuse the same onclick handler
+programCell.appendChild(newLink);
+
+// Send the preferred name to the Google Sheets web app
+const url = 'https://script.google.com/macros/s/AKfycbxsEd7YnSwGwsmwhfPXKc1AZISlIVhng-jQg7Vc92HbLF64RhUJcIeHqomd3EpDTVev/exec';
+const data = {
+action: 'add', // or 'edit'
+programNumber: programNumber,
+sectionNumber: sectionNumber,
+preferredName: preferredName,
+studentId: studentId
+};
+
+fetch(url, {
+redirect: "follow",
+method: 'POST',
+headers: {
+'Content-Type': 'text/plain;charset=utf-8'
+},
+body: JSON.stringify(data)
+})
+.then(response => response.text())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error));
+}
+return false;
+};
+programCell.innerText = '';
+programCell.appendChild(editLink);
+});
+
+// Print the program number and section number to the console
+console.log('Program Number:', programNumber);
+console.log('Section Number:', sectionNumber);
+})();
